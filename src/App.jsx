@@ -15,7 +15,7 @@ function CardsList() {
 
   return (
     <div>
-      <h1>Cards List</h1>
+      <h1>Flash Cards</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {data.map((card, index) => (
           <Card key={index} title={card.title} description={card.description} />

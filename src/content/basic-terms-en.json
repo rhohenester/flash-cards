@@ -1,11 +1,16 @@
 [
   {
     "id": 1,
+    "title": "Intro",
+    "description": "Information is one of the most valuable assets of a company. If it falls into the wrong hands, this can have far-reaching, business-damaging consequences. A functioning Information Security Management System (ISMS) according to the ISO/IEC 27000 series systematically protects the confidentiality, integrity, and availability of company-owned information and data"
+  },
+  {
+    "id": 2,
     "title": "Basic Terms",
     "description": "Basic Terms"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Significance of Information and Operational Security",
     "description": "Significance of Information and Operational Security"
   }
