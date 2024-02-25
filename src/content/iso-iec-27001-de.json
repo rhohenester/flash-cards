@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Was ist ISO/IEC 27001?",
+        "description": "ISO/IEC 27001 ist der weltweit bekannteste Standard für Informationssicherheitsmanagementsysteme (ISMS). Er definiert Anforderungen, die ein ISMS erfüllen muss. Der ISO/IEC 27001-Standard bietet Unternehmen jeder Größe und aus allen Tätigkeitsbereichen Anleitungen zur Einrichtung, Implementierung, Aufrechterhaltung und kontinuierlichen Verbesserung eines Informationssicherheitsmanagementsystems. Konformität mit ISO/IEC 27001 bedeutet, dass eine Organisation oder ein Unternehmen ein System zur Verwaltung von Risiken im Zusammenhang mit der Sicherheit von Daten, die im Besitz des Unternehmens sind oder von diesem verarbeitet werden, implementiert hat und dass dieses System alle in diesem Internationalen Standard verankerten bewährten Verfahren und Grundsätze respektiert."
+    },
+    {
+        "id": 2,
+        "title": "Warum ist ISO/IEC 27001 wichtig?",
+        "description": "Mit dem Anstieg der Cyberkriminalität und dem ständigen Auftreten neuer Bedrohungen kann es schwierig oder sogar unmöglich erscheinen, Cyber-Risiken zu verwalten. ISO/IEC 27001 hilft Organisationen, risikobewusst zu werden und Schwachstellen proaktiv zu identifizieren und anzugehen. ISO/IEC 27001 fördert einen ganzheitlichen Ansatz zur Informationssicherheit: Überprüfung von Personen, Richtlinien und Technologien. Ein nach diesem Standard implementiertes Informationssicherheitsmanagementsystem ist ein Instrument für Risikomanagement, Cyber-Resilienz und operationale Exzellenz."
+    }
+]

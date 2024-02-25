@@ -1,28 +1,54 @@
-import React, { useState } from 'react';
-import jsonData from './content/basic-terms-de.json';
+import React, { useState, useEffect } from 'react';
+import enData from './content/iso-iec-27001.json';
+import deData from './content/iso-iec-27001.json';
 
-function Card({ title, description }) {
-  return (
-    <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px' }}>
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
-  );
-}
+function App() {
+  const [data, setData] = useState([]);
+  const [content, setContent] = useState(null);
+  const [language, setLanguage] = useState('');
 
-function CardsList() {
-  const [data] = useState(jsonData);
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      // Identify language
+      if (enData && deData) {
+        setLanguage('en');
+        setData(enData);
+      } else if (enData) {
+        setLanguage('de');
+        setData(deData);
+      }
+    } catch (error) {
+      console.error('Error fetching data: ', error);
+    }
+  };
 
   return (
     <div>
-      <h1>Flash Cards</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {data.map((card, index) => (
-          <Card key={index} title={card.title} description={card.description} />
-        ))}
-      </div>
+      <nav>
+        <ul>
+          {data?.map((item, index) => (
+            <li key={index}>
+              <button onClick={() => setContent(item)}>{item.title}</button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      {content && <Content content={content} />}
     </div>
   );
 }
 
-export default CardsList;
+function Content({ content }) {
+  return (
+    <div>
+      <h2>{content.title}</h2>
+      <p>{content.description}</p>
+    </div>
+  );
+}
+
+export default App;
